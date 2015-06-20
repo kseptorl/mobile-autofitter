@@ -1,8 +1,10 @@
 module.exports = class MobileAutofitter
-  constructor: (@elementid, @initialFontSize = 10, @initialWidth = 1000) ->
-    return @init()
+  constructor: () ->
+    @running = false
+    return this
 
-  init: () ->
+  start: (@elementid, @initialFontSize = 10, @initialWidth = 1000) ->
+    @running = true
     window.onresize = =>
       @updateRootFontSize @elementid
       return
@@ -10,10 +12,14 @@ module.exports = class MobileAutofitter
     @updateRootFontSize()
     return this
 
-  adjustFontSize: (width) ->
-    width * @initialFontSize / @initialWidth
+  stop: () ->
+    @running = false
+    window.onresize = => return
     return this
 
-  updateRootFontSize: (id = @elementid) ->
-    document.getElementById(id).setAttribute 'style', 'font-size:' + @adjustFontSize(window.innerWidth) + 'px;'
+  adjustFontSize: (width) ->
+    return (width * @initialFontSize / @initialWidth) or @initialFontSize
+
+  updateRootFontSize: () ->
+    document.getElementById(@elementid)?.setAttribute 'style', "font-size:#{@adjustFontSize window.innerWidth }px;"
     return this
