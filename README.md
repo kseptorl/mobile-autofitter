@@ -1,11 +1,8 @@
-# module
-
-## Module [![Build Status][travis-image]][travis-url]
-[![NPM][npm-image]][npm-url]
+# mobile-autofitter
 
 ## Install
 ```
-npm install --save module
+npm install --save mobile-autofitter
 ```
 
 ## Browser
@@ -16,12 +13,12 @@ npm install --save module
 ## Usage
 
 ```coffeescript
-module = require 'module'
+autofitter = require 'mobile-autofitter'
 ```
 
 ## Build
 ```
-git clone https://github.com/nhz-io/module.git
+git clone https://github.com/kseptorl/mobile-autofitter
 cd module
 npm install
 gulp
@@ -39,14 +36,11 @@ VERSION
 #### 0.0.1
 * Initial commit
 
-[travis-image]: https://travis-ci.org/nhz-io/module.svg
-[travis-url]: https://travis-ci.org/nhz-io/module
+[npm-image]: https://nodei.co/npm/mobile-autofitter
+[npm-url]: https://nodei.co/npm/mobile-autofitter
 
-[npm-image]: https://nodei.co/npm/module
-[npm-url]: https://nodei.co/npm/module
+[jsperf-url]: http://jsperf.com/mobile-autofitter
 
-[jsperf-url]: http://jsperf.com/module
-
-[dist-browser-js-url]: https://github.com/nhz-io/module.js
-[min-dist-browser-js-url]: https://github.com/nhz-io/module.min.js
-[pack-min-dist-browser-js-url]: https://github.com/nhz-io/module.pack.min.js
+[dist-browser-js-url]: https://github.com/kseptorl/mobile-autofitter/mobile-autofitter.js
+[min-dist-browser-js-url]: https://github.com/kseptorl/mobile-autofitter/mobile-autofitter.min.js
+[pack-min-dist-browser-js-url]: https://github.com/kseptorl/mobile-autofitter/mobile-autofitter.pack.min.js

@@ -1,27 +1,29 @@
 {
-  "name": "module",
+  "name": "mobile-autofitter",
   "version": "0.0.1",
-  "description": "Module",
+  "description": "Script for autofitting the content(main use for mobile devices), when using EM in css",
   "main": "dist/index.js",
   "scripts": {
     "test": "gulp"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nhz-io/module.git"
+    "url": "https://github.com/kseptorl/mobile-autofitter.git"
   },
   "keywords": [
-    "nhz.io",
+    "kseptor",
     "coffee-script",
     "coffeescript",
-    "coffee"
+    "coffee",
+    "mobile",
+    "mobile-autofitter"
   ],
-  "author": "nhz.io",
+  "author": "Kseptor",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nhz-io/module/issues"
+    "url": "https://github.com/kseptorl/mobile-autofitter/issues"
   },
-  "homepage": "https://github.com/nhz-io/module",
+  "homepage": "https://github.com/kseptorl/mobile-autofitter",
   "devDependencies": {
     "browserify": "^10.2.1",
     "bundle-collapser": "^1.2.0",
@@ -47,8 +49,8 @@
     "build": "./build",
     "dist": "./dist",
     "test": "./build/test",
-    "browserify": "module",
-    "notest": false
+    "browserify": "mobile-autofitter",
+    "notest": true
   },
   "dependencies": {
     "extends__": "0.0.8"
