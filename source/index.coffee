@@ -10,10 +10,10 @@ module.exports = class MobileAutofitter
     @updateRootFontSize()
     return this
 
-  adjustFontSize = (width) ->
+  adjustFontSize: (width) ->
     width * @initialFontSize / @initialWidth
     return this
 
-  updateRootFontSize = (id = @elementid) ->
+  updateRootFontSize: (id = @elementid) ->
     document.getElementById(id).setAttribute 'style', 'font-size:' + @adjustFontSize(window.innerWidth) + 'px;'
     return this
