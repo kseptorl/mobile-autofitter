@@ -21,5 +21,5 @@ module.exports = class MobileAutofitter
     return (width * @initialFontSize / @initialWidth) or @initialFontSize
 
   updateRootFontSize: () ->
-    document.getElementById(@elementid)?.style.fontSize 'style', "#{@adjustFontSize window.innerWidth}px;"
+    document.getElementById(@elementid)?.style.fontSize = "#{@adjustFontSize window.innerWidth}px;"
     return this
