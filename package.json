@@ -1,6 +1,6 @@
 {
   "name": "mobile-autofitter",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Script for autofitting the content(main use for mobile devices), when using EM in css",
   "main": "dist/index.js",
   "scripts": {
